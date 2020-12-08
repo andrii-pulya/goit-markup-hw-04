@@ -167,6 +167,10 @@ a.navigation-page:focus {
 }
 
 .header-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.188;
@@ -175,9 +179,19 @@ a.navigation-page:focus {
   text-decoration: none;
 }
 
+.contacts-icon {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--accent-color);
+}
+
+.header-contacts:hover .contacts-icon,
+.header-contacts:focus .contacts-icon {
+  fill: var(--accent-color);
 }
 
 .header-contacts:visited {
@@ -189,6 +203,13 @@ a.navigation-page:focus {
   display: flex;
   flex-grow: 1;
   background: var(--dark-back-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero .container {
@@ -249,6 +270,17 @@ a.navigation-page:focus {
 
 .advantages-description:not(:last-child) {
   margin-right: 30px;
+}
+
+.advantage-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .advantages-item {
@@ -325,6 +357,39 @@ a.navigation-page:focus {
   font-size: 16px;
   line-height: 1.188;
   letter-spacing: 0.03em;
+}
+
+.social-list {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 16px;
+  margin-bottom: 0px;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .master-social,
+.social-link:focus .master-social {
+  fill: var(--primary-back-color);
 }
 
 /* ===== Footer ===== */
