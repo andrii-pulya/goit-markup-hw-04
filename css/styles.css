@@ -203,6 +203,9 @@ a.navigation-page:focus {
 
 /* ===== HERO ===== */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   display: flex;
   flex-grow: 1;
   background: var(--dark-back-color);
@@ -217,8 +220,6 @@ a.navigation-page:focus {
 
 .hero .container {
   flex-direction: column;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -261,7 +262,7 @@ a.navigation-page:focus {
 }
 
 /* ===== Advantages =====*/
-.advantages-main {
+.advantages {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -301,20 +302,26 @@ a.navigation-page:focus {
 }
 
 /* ===== What we are doing ===== */
-.activity-main {
+.activity {
   padding-bottom: 94px;
 }
 
-.activity {
+.activity-main {
+  width: 1170px;
+  height: 386px;
+}
+.activity-list {
   display: flex;
 }
+
 .section-title {
   margin-bottom: 50px;
   text-align: center;
 }
 
 .activity-item {
-  margin-bottom: 94px;
+  width: 370px;
+  height: 294px;
 }
 
 .activity-item:not(:last-child) {
@@ -322,12 +329,12 @@ a.navigation-page:focus {
 }
 
 /* ===== Our team ===== */
-.masters-main {
+.masters {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.masters {
+.masters-list {
   display: flex;
   justify-content: space-between;
 }
@@ -399,7 +406,7 @@ a.navigation-page:focus {
 }
 
 /* =====Our Clients ===== */
-.clients-main {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -438,14 +445,17 @@ a.navigation-page:focus {
 }
 
 /* ===== Footer ===== */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .dark-back {
   background: var(--dark-back-color);
 }
 
 .footer-main {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-left-part {
@@ -489,6 +499,8 @@ a.navigation-page:focus {
 }
 
 .footer-right-part {
+  margin-top: 12px;
+
   width: 206px;
   height: 80px;
 }
